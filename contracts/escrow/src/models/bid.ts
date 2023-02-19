@@ -1,4 +1,4 @@
-import { near, assert } from 'near-sdk-js';
+import { near } from 'near-sdk-js';
 
 export interface IBid {
     buyerWallet: string,

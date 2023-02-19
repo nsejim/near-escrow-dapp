@@ -1,12 +1,9 @@
 // Find all our documentation at https://docs.near.org
-import { NearBindgen, near, call, view, Vector, bytes, includeBytes, NearPromise } from 'near-sdk-js';
+import { NearBindgen, near, call, view, Vector, bytes, includeBytes } from 'near-sdk-js';
 import { assert } from 'near-sdk-js';
 
 const ONE_TGAS = BigInt("10000000000000");
 const THREE_TGAS = BigInt("30000000000000");
-const NO_DEPOSIT = BigInt(0);
-const NO_ARGS = bytes(JSON.stringify({}));
-const YOCTO = BigInt("1000000000000000000000000") as bigint;
 
 type Bid = {
   bidId: string,
